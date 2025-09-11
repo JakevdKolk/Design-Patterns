@@ -1,0 +1,68 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{4D0CAFE9-C498-EC8E-4D93-94661BFB5D09}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Observer_Pattern</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Displays\ConcreteDisplay.cs" />
+    <Compile Include="Displays\CurrentConditionDisplay.cs" />
+    <Compile Include="Displays\ForecastDisplay.cs" />
+    <Compile Include="Displays\StatisticsDisplay.cs" />
+    <Compile Include="Interfaces\DisplayElement.cs" />
+    <Compile Include="Interfaces\Observer.cs" />
+    <Compile Include="Interfaces\Subject.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="WeatherData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\ObserverPattern\DesignTimeBuild\.dtbcache.v2" />
+    <None Include=".vs\ObserverPattern\FileContentIndex\75da4e2c-5caf-4231-93b8-f24d9cfc3cca.vsidx" />
+    <None Include=".vs\ObserverPattern\v17\.futdcache.v2" />
+    <None Include=".vs\ObserverPattern\v17\.suo" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\Observer Pattern\v17\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

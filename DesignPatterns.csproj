@@ -1,0 +1,284 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{2541C725-F1B4-5AD8-C585-5D33D7FD3818}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>DesignPatterns</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include=".git\ms-persist.xml" />
+    <Content Include="001 - StrategyPattern\StrategyPattern\.gitattributes" />
+    <Content Include="001 - StrategyPattern\StrategyPattern\.gitignore" />
+    <Content Include="001 - StrategyPattern\StrategyPattern\bin\Debug\net6.0\StrategyPattern.dll" />
+    <Content Include="001 - StrategyPattern\StrategyPattern\bin\Debug\net6.0\StrategyPattern.exe" />
+    <Content Include="001 - StrategyPattern\StrategyPattern\bin\Debug\net6.0\StrategyPattern.pdb" />
+    <Content Include="001 - StrategyPattern\StrategyPattern\obj\Debug\net6.0\apphost.exe" />
+    <Content Include="001 - StrategyPattern\StrategyPattern\obj\Debug\net6.0\refint\StrategyPattern.dll" />
+    <Content Include="001 - StrategyPattern\StrategyPattern\obj\Debug\net6.0\ref\StrategyPattern.dll" />
+    <Content Include="001 - StrategyPattern\StrategyPattern\obj\Debug\net6.0\StrategyPattern.csproj.FileListAbsolute.txt" />
+    <Content Include="001 - StrategyPattern\StrategyPattern\obj\Debug\net6.0\StrategyPattern.dll" />
+    <Content Include="001 - StrategyPattern\StrategyPattern\obj\Debug\net6.0\StrategyPattern.pdb" />
+    <Content Include="001 - StrategyPattern\StrategyPattern\StrategyPattern.sln" />
+    <Content Include="002 - ObserverPattern\ObserverPattern\bin\Debug\net6.0\ObserverPattern.dll" />
+    <Content Include="002 - ObserverPattern\ObserverPattern\bin\Debug\net6.0\ObserverPattern.exe" />
+    <Content Include="002 - ObserverPattern\ObserverPattern\bin\Debug\net6.0\ObserverPattern.pdb" />
+    <Content Include="002 - ObserverPattern\ObserverPattern\bin\Debug\net7.0\ObserverPattern.dll" />
+    <Content Include="002 - ObserverPattern\ObserverPattern\bin\Debug\net7.0\ObserverPattern.exe" />
+    <Content Include="002 - ObserverPattern\ObserverPattern\bin\Debug\net7.0\ObserverPattern.pdb" />
+    <Content Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net6.0\apphost.exe" />
+    <Content Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net6.0\ObserverPattern.csproj.FileListAbsolute.txt" />
+    <Content Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net6.0\ObserverPattern.dll" />
+    <Content Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net6.0\ObserverPattern.pdb" />
+    <Content Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net6.0\refint\ObserverPattern.dll" />
+    <Content Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net6.0\ref\ObserverPattern.dll" />
+    <Content Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net7.0\apphost.exe" />
+    <Content Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net7.0\ObserverPattern.csproj.FileListAbsolute.txt" />
+    <Content Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net7.0\ObserverPattern.dll" />
+    <Content Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net7.0\ObserverPattern.pdb" />
+    <Content Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net7.0\refint\ObserverPattern.dll" />
+    <Content Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net7.0\ref\ObserverPattern.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\push-to-checkout.sample" />
+    <None Include=".git\hooks\sendemail-validate.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\main" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\logs\refs\remotes\origin\main" />
+    <None Include=".git\objects\02\2c7acdf56400c64031847c48c9ccbaa6becfcc" />
+    <None Include=".git\objects\14\64b4348db86e427f8819c1d7eccb81b4d07c8a" />
+    <None Include=".git\objects\15\049c52f63a955d3fe45348e89ece49f2b8b1af" />
+    <None Include=".git\objects\19\b86c0ac1058bff6cdeb6903732ba9e90783c15" />
+    <None Include=".git\objects\1f\e3a25286adadb2f83e9f11bdefb24847cfef6f" />
+    <None Include=".git\objects\1f\f0c423042b46cb1d617b81efb715defbe8054d" />
+    <None Include=".git\objects\2d\bb19203f2481cfa6f4c2cf343c70f6c20e0a30" />
+    <None Include=".git\objects\3c\4e0d5f0494df26adc9b524af5e85f9b2dc0552" />
+    <None Include=".git\objects\4f\57cb3cfe32e4946cc57d4d6f850023cf7c0117" />
+    <None Include=".git\objects\53\96b44ac0980dce05b240694b4e895b50df09d3" />
+    <None Include=".git\objects\5b\5d97601aa3c84768eac69ed909dbb441b0bccc" />
+    <None Include=".git\objects\6b\09c9e26ad52bd201e45ae09c6f3aa22b2577f9" />
+    <None Include=".git\objects\70\40a191024c7b4a1a24dfa9cdefcfe865bc3e4b" />
+    <None Include=".git\objects\72\35a7cdff44295a74e398d8a3997156d331596d" />
+    <None Include=".git\objects\74\abf5c9766499f4fd79d4a9398f619d39c2e45e" />
+    <None Include=".git\objects\78\539c87fa902f77b8e01568a1a7e19ae34fed86" />
+    <None Include=".git\objects\7e\ce905589ac439006dfedc375bb366bbbd53930" />
+    <None Include=".git\objects\80\544c77862bb448f520cf121212fc2331b72b49" />
+    <None Include=".git\objects\8c\b1eaea5154e187b96a223bf16dc43641b68566" />
+    <None Include=".git\objects\92\0f42f990b3796ad7b17312d7095454f30af999" />
+    <None Include=".git\objects\93\df31bc77110213e53a0ad6d908be9557e0c0c2" />
+    <None Include=".git\objects\94\91a2fda28342ab358eaf234e1afe0c07a53d62" />
+    <None Include=".git\objects\96\119193b036eb286911e31a77295417c95683e4" />
+    <None Include=".git\objects\9b\de35203f861e23895104eba0e071fca8b42bfe" />
+    <None Include=".git\objects\a6\64b75f5496b2b5ce129f578d6c155c750633de" />
+    <None Include=".git\objects\a9\b56f75d6028ff3a2c5c28d9383623bdaf1ed75" />
+    <None Include=".git\objects\aa\fa5e45e445dc9015b92a5370da8cb210da4038" />
+    <None Include=".git\objects\ac\c0fab5dc774adf4e73076abd7f52af6dba2ff8" />
+    <None Include=".git\objects\ca\413a20eebb0d8445ca948ac9a81556bde16ebd" />
+    <None Include=".git\objects\d9\9ee292d86311c63932c5e3ba12093c10bf3f65" />
+    <None Include=".git\objects\df\e0770424b2a19faf507a501ebfc23be8f54e7b" />
+    <None Include=".git\objects\e5\4ec6c519ef254887bfd9c4d924c1929077a295" />
+    <None Include=".git\objects\e7\33e5aabd3396016da7eb843ad12d25cca939b1" />
+    <None Include=".git\objects\ec\4f6772089a36066015705618f1bcfac4cbf6ae" />
+    <None Include=".git\objects\f1\215a9afb585e697d3292b4820ef89292813ce7" />
+    <None Include=".git\objects\f7\8282fc23af700e7e6af126ea52d88539ea0fa0" />
+    <None Include=".git\objects\fb\d26158afefda3b83e6e8bc93ea5fcf82dd80ac" />
+    <None Include=".git\objects\fd\4f7d1e14c8e313886c980ea70c41a6248dced2" />
+    <None Include=".git\refs\heads\main" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".git\refs\remotes\origin\main" />
+    <None Include=".vs\DesignPatterns\DesignTimeBuild\.dtbcache.v2" />
+    <None Include=".vs\DesignPatterns\FileContentIndex\1d01b517-8042-4cf7-a4c0-ec676720fc79.vsidx" />
+    <None Include=".vs\DesignPatterns\FileContentIndex\6395a551-00f5-4658-a0d5-16d46ac1a134.vsidx" />
+    <None Include=".vs\DesignPatterns\v17\.futdcache.v2" />
+    <None Include=".vs\DesignPatterns\v17\.wsuo" />
+    <None Include=".vs\DesignPatterns\v17\DocumentLayout.backup.json" />
+    <None Include=".vs\DesignPatterns\v17\DocumentLayout.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\ProjectEvaluation\strategypattern.metadata.v9.bin" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\ProjectEvaluation\strategypattern.projects.v9.bin" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\ProjectEvaluation\strategypattern.strings.v9.bin" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\slnx.sqlite" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\StrategyPattern\CopilotIndices\17.13.441.19478\CodeChunks.db" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\StrategyPattern\CopilotIndices\17.13.441.19478\SemanticSymbols.db" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\StrategyPattern\DesignTimeBuild\.dtbcache.v2" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\StrategyPattern\FileContentIndex\038ccfa2-4549-42bf-8ad5-287dd1e42543.vsidx" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\StrategyPattern\FileContentIndex\716a9cc7-b4e4-4fef-8a87-4529c324692f.vsidx" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\StrategyPattern\FileContentIndex\854b90b6-c30a-4eb5-bf3b-d4e4cc701f48.vsidx" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\StrategyPattern\FileContentIndex\8b9401c9-9816-4b56-b36c-8b131ac34631.vsidx" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\StrategyPattern\FileContentIndex\d1054b3c-687f-428f-bf17-64434b553012.vsidx" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\StrategyPattern\v17\.futdcache.v2" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\StrategyPattern\v17\.suo" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\StrategyPattern\v17\.wsuo" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\StrategyPattern\v17\DocumentLayout.backup.json" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\StrategyPattern\v17\DocumentLayout.json" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\StrategyPattern\v17\TestStore\0\000.testlog" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\StrategyPattern\v17\TestStore\0\testlog.manifest" />
+    <None Include="001 - StrategyPattern\StrategyPattern\.vs\VSWorkspaceState.json" />
+    <None Include="001 - StrategyPattern\StrategyPattern\bin\Debug\net6.0\StrategyPattern.deps.json" />
+    <None Include="001 - StrategyPattern\StrategyPattern\bin\Debug\net6.0\StrategyPattern.runtimeconfig.json" />
+    <None Include="001 - StrategyPattern\StrategyPattern\obj\Debug\net6.0\StrategyPattern.AssemblyInfoInputs.cache" />
+    <None Include="001 - StrategyPattern\StrategyPattern\obj\Debug\net6.0\StrategyPattern.assets.cache" />
+    <None Include="001 - StrategyPattern\StrategyPattern\obj\Debug\net6.0\StrategyPattern.csproj.BuildWithSkipAnalyzers" />
+    <None Include="001 - StrategyPattern\StrategyPattern\obj\Debug\net6.0\StrategyPattern.csproj.CoreCompileInputs.cache" />
+    <None Include="001 - StrategyPattern\StrategyPattern\obj\Debug\net6.0\StrategyPattern.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="001 - StrategyPattern\StrategyPattern\obj\Debug\net6.0\StrategyPattern.genruntimeconfig.cache" />
+    <None Include="001 - StrategyPattern\StrategyPattern\obj\project.assets.json" />
+    <None Include="001 - StrategyPattern\StrategyPattern\obj\project.nuget.cache" />
+    <None Include="001 - StrategyPattern\StrategyPattern\obj\Release\net6.0\StrategyPattern.AssemblyInfoInputs.cache" />
+    <None Include="001 - StrategyPattern\StrategyPattern\obj\Release\net6.0\StrategyPattern.assets.cache" />
+    <None Include="001 - StrategyPattern\StrategyPattern\obj\Release\net6.0\StrategyPattern.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="001 - StrategyPattern\StrategyPattern\obj\StrategyPattern.csproj.nuget.dgspec.json" />
+    <None Include="001 - StrategyPattern\StrategyPattern\obj\StrategyPattern.csproj.nuget.g.props" />
+    <None Include="001 - StrategyPattern\StrategyPattern\obj\StrategyPattern.csproj.nuget.g.targets" />
+    <None Include="001 - StrategyPattern\StrategyPattern\StrategyPattern.csproj" />
+    <None Include="002 - ObserverPattern\ObserverPattern\.vs\ObserverPattern\FileContentIndex\7c950b0f-ffea-4590-8c7b-9406015c2b96.vsidx" />
+    <None Include="002 - ObserverPattern\ObserverPattern\.vs\ObserverPattern\v17\.wsuo" />
+    <None Include="002 - ObserverPattern\ObserverPattern\.vs\ObserverPattern\v17\DocumentLayout.backup.json" />
+    <None Include="002 - ObserverPattern\ObserverPattern\.vs\ObserverPattern\v17\DocumentLayout.json" />
+    <None Include="002 - ObserverPattern\ObserverPattern\.vs\slnx.sqlite" />
+    <None Include="002 - ObserverPattern\ObserverPattern\.vs\VSWorkspaceState.json" />
+    <None Include="002 - ObserverPattern\ObserverPattern\bin\Debug\net6.0\ObserverPattern.deps.json" />
+    <None Include="002 - ObserverPattern\ObserverPattern\bin\Debug\net6.0\ObserverPattern.runtimeconfig.json" />
+    <None Include="002 - ObserverPattern\ObserverPattern\bin\Debug\net7.0\ObserverPattern.deps.json" />
+    <None Include="002 - ObserverPattern\ObserverPattern\bin\Debug\net7.0\ObserverPattern.runtimeconfig.json" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net6.0\ObserverPattern.AssemblyInfoInputs.cache" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net6.0\ObserverPattern.assets.cache" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net6.0\ObserverPattern.csproj.AssemblyReference.cache" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net6.0\ObserverPattern.csproj.BuildWithSkipAnalyzers" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net6.0\ObserverPattern.csproj.CoreCompileInputs.cache" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net6.0\ObserverPattern.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net6.0\ObserverPattern.genruntimeconfig.cache" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net7.0\ObserverPattern.AssemblyInfoInputs.cache" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net7.0\ObserverPattern.assets.cache" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net7.0\ObserverPattern.csproj.AssemblyReference.cache" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net7.0\ObserverPattern.csproj.BuildWithSkipAnalyzers" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net7.0\ObserverPattern.csproj.CoreCompileInputs.cache" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net7.0\ObserverPattern.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net7.0\ObserverPattern.genruntimeconfig.cache" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\ObserverPattern.csproj.nuget.dgspec.json" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\ObserverPattern.csproj.nuget.g.props" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\ObserverPattern.csproj.nuget.g.targets" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\project.assets.json" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\project.nuget.cache" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\Release\net6.0\ObserverPattern.AssemblyInfoInputs.cache" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\Release\net6.0\ObserverPattern.assets.cache" />
+    <None Include="002 - ObserverPattern\ObserverPattern\obj\Release\net6.0\ObserverPattern.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="002 - ObserverPattern\ObserverPattern\ObserverPattern.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="001 - StrategyPattern\StrategyPattern\Ducks\DecoyDuck.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\Ducks\Duck.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\Ducks\MallardDuck.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\Ducks\RedheadDuck.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\Ducks\RobotDuck.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\Ducks\RubberDuck.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\Interfaces\FlyBehavior\FlyBehavior.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\Interfaces\FlyBehavior\FlyImplementation\FlySkillIssue.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\Interfaces\FlyBehavior\FlyImplementation\FlyWithRocket.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\Interfaces\FlyBehavior\FlyImplementation\FlyWithWings.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\Interfaces\QuackBehavior\QuackBehavior.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\Interfaces\QuackBehavior\QuackImplementation\Qauck.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\Interfaces\QuackBehavior\QuackImplementation\Squish.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\Interfaces\QuackBehavior\QuackImplementation\TheFactoryMustGrow.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\Interfaces\SwimBehavior\SwimBehavior.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\Interfaces\SwimBehavior\SwimImplementation\NoSwim.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\Interfaces\SwimBehavior\SwimImplementation\Swimming.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\obj\Debug\net6.0\StrategyPattern.AssemblyInfo.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\obj\Debug\net6.0\StrategyPattern.GlobalUsings.g.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\obj\Release\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\obj\Release\net6.0\StrategyPattern.AssemblyInfo.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\obj\Release\net6.0\StrategyPattern.GlobalUsings.g.cs" />
+    <Compile Include="001 - StrategyPattern\StrategyPattern\Program.cs" />
+    <Compile Include="002 - ObserverPattern\ObserverPattern\Displays\CurrentConditionDisplay.cs" />
+    <Compile Include="002 - ObserverPattern\ObserverPattern\Displays\ForecastDisplay.cs" />
+    <Compile Include="002 - ObserverPattern\ObserverPattern\Displays\StatisticsDisplay.cs" />
+    <Compile Include="002 - ObserverPattern\ObserverPattern\Interfaces\DisplayElement.cs" />
+    <Compile Include="002 - ObserverPattern\ObserverPattern\Interfaces\Observer.cs" />
+    <Compile Include="002 - ObserverPattern\ObserverPattern\Interfaces\Subject.cs" />
+    <Compile Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net6.0\ObserverPattern.AssemblyInfo.cs" />
+    <Compile Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net6.0\ObserverPattern.GlobalUsings.g.cs" />
+    <Compile Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net7.0\ObserverPattern.AssemblyInfo.cs" />
+    <Compile Include="002 - ObserverPattern\ObserverPattern\obj\Debug\net7.0\ObserverPattern.GlobalUsings.g.cs" />
+    <Compile Include="002 - ObserverPattern\ObserverPattern\obj\Release\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="002 - ObserverPattern\ObserverPattern\obj\Release\net6.0\ObserverPattern.AssemblyInfo.cs" />
+    <Compile Include="002 - ObserverPattern\ObserverPattern\obj\Release\net6.0\ObserverPattern.GlobalUsings.g.cs" />
+    <Compile Include="002 - ObserverPattern\ObserverPattern\Program.cs" />
+    <Compile Include="002 - ObserverPattern\ObserverPattern\WeatherData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include="001 - StrategyPattern\StrategyPattern\bin\Release\net6.0\" />
+    <Folder Include="001 - StrategyPattern\StrategyPattern\obj\Release\net6.0\refint\" />
+    <Folder Include="001 - StrategyPattern\StrategyPattern\obj\Release\net6.0\ref\" />
+    <Folder Include="002 - ObserverPattern\ObserverPattern\bin\Release\net6.0\" />
+    <Folder Include="002 - ObserverPattern\ObserverPattern\obj\Release\net6.0\refint\" />
+    <Folder Include="002 - ObserverPattern\ObserverPattern\obj\Release\net6.0\ref\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
