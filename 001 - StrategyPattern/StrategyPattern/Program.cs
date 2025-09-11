@@ -1,6 +1,7 @@
 ﻿using StrategyPattern.Ducks;
 using StrategyPattern.Interfaces.FlyBehavior;
 using StrategyPattern.Interfaces.FlyBehavior.FlyImplementation;
+using StrategyPattern.Interfaces.QuackBehavior.QuackImplementation;
 
 namespace StrategyPattern
 {
@@ -15,6 +16,9 @@ namespace StrategyPattern
             Duck robotDuck = new RobotDuck();
 
 
+          
+            
+
             foreach(var duck in new List<Duck> { mallardDuck, redheadDuck, decoyDuck, rubberDuck, robotDuck })
             {
                 duck.Display();
@@ -23,9 +27,12 @@ namespace StrategyPattern
                 duck.PerformSwim();
                 Console.WriteLine();
             }
+            robotDuck.SetQuackBehavior(new Squish());
 
+            robotDuck.PerformQuack();
 
-
+            robotDuck.setFlyBehavior(new FlySkillIssue());
+            robotDuck.PerformFly();
 
         }
     }
