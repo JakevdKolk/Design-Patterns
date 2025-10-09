@@ -15,22 +15,12 @@ namespace DecoratorPattern
 
             foreach (EBeverages beverage in Enum.GetValues(typeof(EBeverages)))
             {
-                int number = random.Next(1, 4); 
+                int number = random.Next(0, 3); 
                 Console.WriteLine(number);
-                if (number == 1)
-                {
-                    cafeFactory.OrderBeverage(beverage, Size.VENDI);
-                }
-                else if (number == 2)
-                {
-                    cafeFactory.OrderBeverage(beverage, Size.GRANDE);
+                cafeFactory.OrderBeverage(beverage, (Size)number);
 
-                }
-                else
-                {
-                    cafeFactory.OrderBeverage(beverage, Size.TALL);
+                
 
-                }
 
             }
         }

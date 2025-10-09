@@ -12,8 +12,6 @@ namespace DecoratorPattern.FactoryPattern
             Beverage beverage = CreateBeverage(order);   
            
             beverage.Size = size;
-            beverage.GetDescription();
-            beverage.GetSizeCost();
 
             PrintBeverage(beverage);
 
