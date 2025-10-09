@@ -11,9 +11,27 @@ namespace DecoratorPattern
         {
             Factory cafeFactory = new BeverageFactory();
 
+            Random random = new Random();
+
             foreach (EBeverages beverage in Enum.GetValues(typeof(EBeverages)))
             {
-                cafeFactory.OrderBeverage(beverage, Size.VENDI);
+                int number = random.Next(1, 4); 
+                Console.WriteLine(number);
+                if (number == 1)
+                {
+                    cafeFactory.OrderBeverage(beverage, Size.VENDI);
+                }
+                else if (number == 2)
+                {
+                    cafeFactory.OrderBeverage(beverage, Size.GRANDE);
+
+                }
+                else
+                {
+                    cafeFactory.OrderBeverage(beverage, Size.TALL);
+
+                }
+
             }
         }
     }
