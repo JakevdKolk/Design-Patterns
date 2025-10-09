@@ -6,11 +6,15 @@ namespace DecoratorPattern.FactoryPattern
     {
         internal abstract Beverage CreateBeverage(EBeverages beverage);
 
-
-        public Beverage BeverageStore(EBeverages order)
+        //speciaal voor jouw gefixed robert
+        public Beverage OrderBeverage(EBeverages order, Size size)
         {
             Beverage beverage = CreateBeverage(order);   
            
+            beverage.Size = size;
+            beverage.GetDescription();
+            beverage.GetSizeCost();
+
             PrintBeverage(beverage);
 
             return beverage;

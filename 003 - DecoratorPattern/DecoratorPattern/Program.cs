@@ -13,7 +13,7 @@ namespace DecoratorPattern
 
             foreach (EBeverages beverage in Enum.GetValues(typeof(EBeverages)))
             {
-                cafeFactory.BeverageStore(beverage);
+                cafeFactory.OrderBeverage(beverage, Size.VENDI);
             }
         }
     }
