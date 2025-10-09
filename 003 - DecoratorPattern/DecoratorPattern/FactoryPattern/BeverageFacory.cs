@@ -2,13 +2,14 @@ using DecoratorPattern.Beverages;
 using DecoratorPattern.Condiments;
 using System;
 
-namespace DecoratorPattern.Factory
+namespace DecoratorPattern.FactoryPattern
 {
-    internal class BeverageFactory : Factoryy
+    internal class BeverageFactory : Factory
     {
         internal override Beverage CreateBeverage(EBeverages beverage)
         {
             Beverage result;
+
 
             switch (beverage)
             {
@@ -134,13 +135,8 @@ namespace DecoratorPattern.Factory
                     throw new ArgumentException($"Unknown beverage type: {beverage}");
             }
 
-            PrintBeverage(result);
             return result;
         }
 
-        private void PrintBeverage(Beverage beverage)
-        {
-            Console.WriteLine(beverage.GetDescription() + " $" + beverage.GetSizeCost().ToString("#.##"));
-        }
     }
 }

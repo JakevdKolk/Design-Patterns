@@ -1,6 +1,6 @@
 ﻿using DecoratorPattern.Beverages;
 using DecoratorPattern.Condiments;
-using DecoratorPattern.Factory;
+using DecoratorPattern.FactoryPattern;
 using System;
 
 namespace DecoratorPattern
@@ -9,11 +9,11 @@ namespace DecoratorPattern
     {
         static void Main(string[] args)
         {
-            Factoryy cafeFactory = new BeverageFactory();
+            Factory cafeFactory = new BeverageFactory();
 
             foreach (EBeverages beverage in Enum.GetValues(typeof(EBeverages)))
             {
-                cafeFactory.CreateBeverage(beverage);
+                cafeFactory.BeverageStore(beverage);
             }
         }
     }

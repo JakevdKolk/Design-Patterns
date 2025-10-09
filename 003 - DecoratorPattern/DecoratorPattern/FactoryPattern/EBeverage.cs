@@ -1,7 +1,7 @@
 using DecoratorPattern.Beverages;
 
 
-namespace DecoratorPattern.Factory
+namespace DecoratorPattern.FactoryPattern
 {
 
     internal enum EBeverages
