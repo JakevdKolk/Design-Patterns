@@ -14,6 +14,7 @@ namespace CommandPattern.Classes
         public int LOW { get { return 1; } }
         public int OFF { get { return 0; } }
         public string location;
+        public int prevSpeed;
         int speed;
         public CeilingFan(string location)
         { 

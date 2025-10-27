@@ -61,25 +61,25 @@ namespace CommandPattern
 
             remoteControl.OnButtonWasPushed(3);
             remoteControl.OffButtonWasPushed(3);
+            remoteControl.UndoButtonWasPushed(3);
+
+            //remoteControl.OnButtonWasPushed(1);
+            //remoteControl.OffButtonWasPushed(1);
 
 
-            remoteControl.OnButtonWasPushed(1);
-            remoteControl.OffButtonWasPushed(1);
+
+            //remoteControl.OnButtonWasPushed(2);
+            //remoteControl.OffButtonWasPushed(2);
 
 
-
-            remoteControl.OnButtonWasPushed(2);
-            remoteControl.OffButtonWasPushed(2);
-
-
-            remoteControl.OnButtonWasPushed(4);
-            remoteControl.OffButtonWasPushed(4);
+            //remoteControl.OnButtonWasPushed(4);
+            //remoteControl.OffButtonWasPushed(4);
 
 
-            remoteControl.OnButtonWasPushed(5);
-            remoteControl.OffButtonWasPushed(5);
+            //remoteControl.OnButtonWasPushed(5);
+            //remoteControl.OffButtonWasPushed(5);
 
-            remoteControl.UndoAllCommands();
+            //remoteControl.UndoAllCommands();
 
 
             Console.WriteLine(remoteControl);

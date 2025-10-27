@@ -10,7 +10,6 @@ namespace CommandPattern.Classes.Commands
     internal class CeilingFanOffCommand : Command
     {
         CeilingFan ceilingFan;
-        int prevSpeed;
 
         public CeilingFanOffCommand(CeilingFan ceilingFan)
         {
@@ -20,13 +19,13 @@ namespace CommandPattern.Classes.Commands
 
         public void Execute()
         {
+            ceilingFan.prevSpeed = ceilingFan.GetSpeed();
             ceilingFan.Off();
-            prevSpeed = ceilingFan.GetSpeed();
         }
 
         public void Undo()
         {
-            ceilingFan.SetSpeed(prevSpeed);
+            ceilingFan.SetSpeed(ceilingFan.prevSpeed);
             Console.WriteLine(ceilingFan.location + " is on: " + ceilingFan.GetSpeed());
 
         }
